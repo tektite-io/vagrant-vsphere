@@ -45,9 +45,10 @@ options. First, you can build and install the plugin from source every time you
 make a change:
 
 1. Make changes
-2. `rake build`
-3. `vagrant plugin install ./pkg/vagrant-vsphere-$VERSION.gem`
-4. `vagrant up --provider=vsphere`
+2. `bundle config github.https true`
+3. `rake build`
+4. `vagrant plugin install ./pkg/vagrant-vsphere-$VERSION.gem`
+5. `vagrant up --provider=vsphere`
 
 Second, you can use Bundler and the Vagrant gem to execute vagrant commands,
 saving time as you never have to wait for the plugin to build and install:
