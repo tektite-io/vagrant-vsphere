@@ -92,7 +92,15 @@ module VagrantPlugins
               env[:ui].info " -- #{config.clone_from_vm ? 'Source' : 'Template'} VM: #{template.pretty_path}"
               env[:ui].info " -- Target VM: #{vm_base_folder.pretty_path}/#{name}"
 
-              new_vm = template.CloneVM_Task(folder: vm_base_folder, name: name, spec: spec).wait_for_completion
+              last_progress = 0
+              new_vm = template.CloneVM_Task(folder: vm_base_folder, name: name, spec: spec).wait_for_progress do |progress|
+                if (progress.is_a? Numeric) && (progress/10).floor != (last_progress/10).floor
+                  env[:ui].info "Progress: #{progress}%"
+                  last_progress = progress
+                end
+              end
+              env[:ui].info "Done!"
+
               resize_disk(new_vm, disk_size_in_gb) if disk_size_in_gb.to_i > 0
               new_vm.PowerOnVM_Task.wait_for_completion
 
