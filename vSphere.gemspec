@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   # pin nokogiri to 1.10.10 to get around 1.11.0 requiring ruby >=2.5
   s.add_dependency 'nokogiri', '~> 1.19.4'
 
-  s.add_dependency 'rbvmomi', '>=1.11.5', '<2.0.0'
+  s.add_dependency 'rbvmomi', '~> 3.0.0'
 
   s.add_dependency 'i18n', '>=0.6.4'
 
