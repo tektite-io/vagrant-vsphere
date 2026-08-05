@@ -3,6 +3,7 @@
 source 'http://rubygems.org'
 
 group :development do
+  gem 'pry-byebug', '~> 3.12.0'
   # We depend on Vagrant for development, but we don't add it as a
   # gem dependency because we expect to be installed within the
   # Vagrant environment itself using `vagrant plugin`.
