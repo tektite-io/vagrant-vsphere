@@ -1,3 +1,15 @@
+## [1.15.0 (TBD)](https://github.com/nsidc/vagrant-vsphere/releases/tag/v1.15.0)
+  - Update gem to Ruby 3.4.10
+  - Support for Vagrant >=2.4.9
+  - Upgrade nokogiri to ~> 1.19.4
+  - update other dependencies
+
+## [1.14.0 (2022-08-01)](https://github.com/nsidc/vagrant-vsphere/releases/tag/v1.14.0)
+  - Update gem to Ruby 3.0.2
+  - Support for Vagrant >=2.2.17
+  - Upgrade nokogiri to 1.13.4
+  - Update other dependencies
+
 ## [1.13.5 (2021-01-05)](https://github.com/nsidc/vagrant-vsphere/releases/tag/v1.13.5)
   - Pin nokogiri to 1.10.10. This fixes an issue where vagrant-vsphere failed to install due to 
     nokogiri requiring Ruby >=2.5.  This is a workaround until the vagrant-nsidc plugin is updated
