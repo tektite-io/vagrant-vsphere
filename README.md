@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/nsidc/vagrant-vsphere.svg?branch=master)](https://travis-ci.org/nsidc/vagrant-vsphere) [![Gem Version](https://badge.fury.io/rb/vagrant-vsphere.svg)](http://badge.fury.io/rb/vagrant-vsphere)
+[![Gem Version](https://badge.fury.io/rb/vagrant-vsphere.svg)](http://badge.fury.io/rb/vagrant-vsphere)
 
 # Vagrant vSphere Provider
 
@@ -30,9 +30,9 @@ nsidc@nsidc.org for more information.
 
 
 ## Current Version
-**version: 1.13.5**
+**version: 1.15.0**
 
-vagrant-vsphere (**version: 1.13.5**) is available from
+vagrant-vsphere (**version: 1.15.0**) is available from
 [RubyGems.org](https://rubygems.org/gems/vagrant-vsphere)
 
 

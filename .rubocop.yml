@@ -1,6 +1,10 @@
 inherit_from: .rubocop_todo.yml
 
-Style/FileName:
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+
+Naming/FileName:
   Exclude:
     - 'lib/vagrant-vsphere.rb'
 
@@ -21,7 +25,7 @@ Metrics/ClassLength:
 Metrics/CyclomaticComplexity:
   Enabled: false
 
-Metrics/LineLength:
+Layout/LineLength:
   Enabled: false
 
 Metrics/MethodLength:
