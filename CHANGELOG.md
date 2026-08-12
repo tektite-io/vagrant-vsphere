@@ -1,8 +1,9 @@
-## [1.15.0 (TBD)](https://github.com/nsidc/vagrant-vsphere/releases/tag/v1.15.0)
+## [1.15.0 (2026-08-12)](https://github.com/nsidc/vagrant-vsphere/releases/tag/v1.15.0)
   - Update gem to Ruby 3.4.10
   - Support for Vagrant >=2.4.9
   - Upgrade nokogiri to ~> 1.19.4
   - update other dependencies
+  - Remove references to travis CI. This is no longer functional.
 
 ## [1.14.0 (2022-08-01)](https://github.com/nsidc/vagrant-vsphere/releases/tag/v1.14.0)
   - Update gem to Ruby 3.0.2

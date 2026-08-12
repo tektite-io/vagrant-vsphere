@@ -30,14 +30,6 @@ Changes that eliminate rules from
 [`.rubocop_todo.yml`](https://github.com/nsidc/vagrant-vsphere/blob/master/.rubocop_todo.yml)
 are welcome.
 
-### Travis-CI
-
-[Travis](https://travis-ci.org/nsidc/vagrant-vsphere) will automatically run
-RuboCop and the unit tests when you create a new pull request. If there are any
-failures, a notification will appear on the pull request. To update your pull
-request, simply create a new commit on the branch that fixes the failures, and
-push to the branch.
-
 ### Development Without Building the Plugin
 
 To test your changes when developing the plugin, you have two main
@@ -68,7 +60,7 @@ method for Vagrant plugin development.
 
 ### Releasing
 
-1) Ensure [travis-ci](https://travis-ci.org/github/nsidc/vagrant-vsphere/) build is passing
+1) Ensure tests are passing
 2) Ensure `CHANGELOG.md` is up-to-date with the changes to release
 3) Update version in the code, according to [semver](https://semver.org/)
     * [bumpversion](https://github.com/peritus/bumpversion) can be used; if not,
